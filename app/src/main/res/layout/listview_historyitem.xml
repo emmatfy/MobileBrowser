@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/historyCheckBox"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/historyItemTime"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:gravity="left|center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/historyItemUrl"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/historyItemDelete"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/delete" />
+
+
+</LinearLayout>

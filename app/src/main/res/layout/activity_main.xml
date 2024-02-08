@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_above="@+id/url"/>
+
+    <RelativeLayout
+        android:id="@+id/addBookmarks"
+        android:layout_width="328dp"
+        android:layout_height="208dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:background="@android:color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView_addBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="11dp"
+            android:text="Add Bookmark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_addBookmarksTitle"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="30dp"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="Title..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/editText_addBookmarksUrl"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="30dp"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="Website..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button_addbookmarksCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="150dp"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:textColor="#5233FF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_addbookmarksSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:text="Save"
+            android:textColor="#5233FF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/backin" />
+
+        <ImageButton
+            android:id="@+id/imageButton_forward"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/forwardin" />
+
+        <ImageButton
+            android:id="@+id/imageButton_homepage"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/homepage" />
+
+        <ImageButton
+            android:id="@+id/imageButton_addbookmarks"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/addbookmarks" />
+
+        <ImageButton
+            android:id="@+id/imageButton_bookmarks"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/bookmarks" />
+
+        <ImageButton
+            android:id="@+id/imageButton_history"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/history" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton_newtab"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            app:srcCompat="@drawable/newtab" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputURL"
+                    android:layout_width="360dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/border_shape"
+                    android:gravity="center"
+                    android:hint="Search or enter website..."
+                    android:imeOptions="actionGo"
+                    android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/imageButton_reload"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/reload" />
+    </LinearLayout>
+
+
+</RelativeLayout>
